@@ -1,0 +1,15 @@
+.idea
+.pytest_cache
+__pycache__
+venv
+src/checkwarranty.egg-info
+src/config.py
+src/extended_warranty.xlsx
+src/geckodriver.exe
+src/geckodriver.log
+logs.txt
+src/update_warranty_db.bat
+tests/data
+tests/.coverage
+tests/extended_warranty.xlsx
+tests/test_excel_util.xlsx
