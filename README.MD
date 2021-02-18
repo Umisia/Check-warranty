@@ -1,4 +1,4 @@
-#Check-warranty
+#Check-warranty<br>
 Fills a database with data obtained via Zoho APIs. Graphical interface for easy access to the data. Project consists of two parts.<br> 
 * Tkinter UI
     * **Search** by: device's serial number, order's postcode, order's number or customer's name, returns: matching orders, links to them, order and dispatch dates, warranty status. <br>
