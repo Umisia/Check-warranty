@@ -165,22 +165,3 @@ button_update.grid(column=0, row=0)
 button_addwarranty = tkinter.Button(bottom, text="Upload", command=upload, bg="hotpink3")
 button_addwarranty.grid(column=1, row=0, padx=(10, 0))
 window.mainloop()
-#
-# nie wszedzie wlozyl ord id do spredszitu!
-# test data:
-#     VKAV17111100636 - gwarancja dluga SO-8294
-# #latwy macz, gwarancja na orderze:
-# # SO-7352
-# # 1101BTV17010504
-# #cienszki macz,
-# # SO-8603  VKAV17111100886
-#
-# podwojny macz
-# 1101BTV16070491
-#
-# Ibstock Junior School
-# 7144
-# 9701
-# lp-5825
-# lp-6875
-# GL2 5JQ' - incorrect
