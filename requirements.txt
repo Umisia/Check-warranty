@@ -4,5 +4,6 @@ pandas~=1.2.2
 xlwings~=0.22.2
 pytest~=6.2.2
 setuptools~=53.0.0
-openpyxl
-mysql-connector-python
+python-docx~=0.8.10
+mysql-connector-python~=8.0.23
+openpyxl~=3.0.6
