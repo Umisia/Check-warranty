@@ -1,10 +1,6 @@
-print("importing update_db")
 import update_db
-
 import pytest
 from collections import namedtuple
-
-print("importing db_util")
 from db_util import DB
 
 @pytest.fixture(scope='module')
