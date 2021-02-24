@@ -123,7 +123,7 @@ class TestINVorder:
         assert inv_ord.serials == inv_orders_data['serials']
 
 class TestCRMorder:
-    @pytest.fixture(scope='session')
+    @pytest.fixture(scope='class')
     def crm_token(self):
         token = config.crm_token
         yield zoho_oauth.refresh_token(token)
