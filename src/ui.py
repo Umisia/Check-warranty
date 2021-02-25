@@ -33,12 +33,12 @@ def run_batch():
 def search(value):
     Result = collections.namedtuple("Result", "column so_id so_no order_date dispatch_date extra_warranty",
                                     defaults=(None,))
-    columns_to_check = ("orders.so_number",
-                        "orders.shipping_name",
-                        "orders.billing_name",
-                        "orders.billing_postcode",
-                        "orders.shipping_postcode",
-                        "serial_numbers.sn")
+    columns_to_check = ("ops_orders.so_number",
+                        "ops_orders.shipping_name",
+                        "ops_orders.billing_name",
+                        "ops_orders.billing_postcode",
+                        "ops_orders.shipping_postcode",
+                        "ops_serial_numbers.sn")
     finds = []
     for column in columns_to_check:
         try:
@@ -94,7 +94,7 @@ def find_orders():
 
         log.info(search_finds)
         for find in search_finds:
-            if find.column == "orders.so_number" or find.column == "serial_numbers.sn":
+            if find.column == "ops_orders.so_number" or find.column == "ops_serial_numbers.sn":
                 format_exact_match(find)
                 labels.append(find.so_no)
             else:
@@ -127,7 +127,7 @@ def on_closing():
 
 
 log = Logger(__name__).logger
-mydb = DB("serialnumbers")
+mydb = DB("warranty_database")
 
 window = tkinter.Tk()
 window.title("Find order")
