@@ -1,7 +1,6 @@
 .idea
 .pytest_cache
 __pycache__
-venv
 src/checkwarranty.egg-info
 src/config.py
 src/extended_warranty.xlsx
@@ -13,3 +12,5 @@ tests/data
 tests/.coverage
 tests/extended_warranty.xlsx
 tests/test_excel_util.xlsx
+Dump20210304
+test order.txt

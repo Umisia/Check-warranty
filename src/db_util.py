@@ -138,7 +138,7 @@ def reset_db():
         password=config.db_pswd)
     cursor = conn.cursor(buffered=True)
 
-    delete_db('warranty_database')
+    #### delete_db('warranty_database')
     create_db("warranty_database")
     mydb = DB('warranty_database')
     mydb.create_tables()
